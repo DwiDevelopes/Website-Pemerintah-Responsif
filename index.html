@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portal Pemerintah Indonesia</title>
+    <link rel="icon" type="image/x-icon" href="https://static.photos/government/64x64/1">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <style>
+        .hero-gradient {
+            background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
+        }
+        .nav-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+        }
+        .service-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white nav-shadow">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <img src="https://static.photos/government/64x64/1" alt="Logo Pemerintah" class="h-12 w-12">
+                <h1 class="text-xl font-bold text-blue-900">PORTAL PEMERINTAH</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#" class="text-blue-900 font-medium hover:text-blue-700">Beranda</a>
+                <a href="#" class="text-gray-600 hover:text-blue-700">Layanan Publik</a>
+                <a href="#" class="text-gray-600 hover:text-blue-700">Informasi</a>
+                <a href="#" class="text-gray-600 hover:text-blue-700">Kontak</a>
+            </nav>
+            <button class="md:hidden text-blue-900">
+                <i data-feather="menu"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-gradient text-white py-20">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-10 md:mb-0" data-aos="fade-right">
+                <h1 class="text-4xl md:text-5xl font-bold mb-6">Selamat Datang di Portal Layanan Pemerintah</h1>
+                <p class="text-xl mb-8">Akses berbagai layanan publik secara online dengan mudah dan cepat.</p>
+                <div class="flex flex-col sm:flex-row space-y-3 sm:space-y-0 sm:space-x-4">
+                    <button class="bg-white text-blue-900 px-6 py-3 rounded-lg font-medium hover:bg-gray-100 transition">Cari Layanan</button>
+                    <button class="border-2 border-white px-6 py-3 rounded-lg font-medium hover:bg-white hover:text-blue-900 transition">Informasi Terkini</button>
+                </div>
+            </div>
+            <div class="md:w-1/2" data-aos="fade-left">
+                <img src="https://static.photos/government/600x400/1" alt="Hero Image" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Layanan Publik</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-blue-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="file-text" class="text-blue-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-900">Administrasi Kependudukan</h3>
+                    <p class="text-gray-600">Layanan pembuatan KTP, KK, dan dokumen kependudukan lainnya.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-green-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="home" class="text-green-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-900">Perizinan Bangunan</h3>
+                    <p class="text-gray-600">Pengajuan IMB dan perizinan terkait properti.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-yellow-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="dollar-sign" class="text-yellow-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-900">Pembayaran Pajak</h3>
+                    <p class="text-gray-600">Layanan pembayaran pajak kendaraan dan properti.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-6 rounded-xl shadow-md hover:shadow-lg border border-gray-100" data-aos="fade-up" data-aos-delay="400">
+                    <div class="bg-red-100 p-3 rounded-full w-12 h-12 flex items-center justify-center mb-4">
+                        <i data-feather="heart" class="text-red-900"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-2 text-blue-900">Kesehatan</h3>
+                    <p class="text-gray-600">Informasi layanan kesehatan dan BPJS.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-blue-900 mb-12" data-aos="fade-up">Berita & Pengumuman</h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- News 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="100">
+                    <img src="https://static.photos/government/600x400/2" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-700">12 Juni 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-3 text-blue-900">Program Bantuan Sosial Tahap II</h3>
+                        <p class="text-gray-600 mb-4">Pemerintah meluncurkan program bantuan sosial tahap kedua untuk masyarakat terdampak.</p>
+                        <a href="#" class="text-blue-700 font-medium flex items-center">
+                            Baca selengkapnya <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- News 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="200">
+                    <img src="https://static.photos/government/600x400/3" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-700">5 Juni 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-3 text-blue-900">Pembangunan Infrastruktur Jalan</h3>
+                        <p class="text-gray-600 mb-4">Pemerintah pusat alokasikan dana untuk pembangunan jalan di daerah terpencil.</p>
+                        <a href="#" class="text-blue-700 font-medium flex items-center">
+                            Baca selengkapnya <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- News 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-md" data-aos="fade-up" data-aos-delay="300">
+                    <img src="https://static.photos/government/600x400/4" alt="News Image" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <span class="text-sm text-blue-700">28 Mei 2023</span>
+                        <h3 class="text-xl font-semibold mt-2 mb-3 text-blue-900">Peningkatan Layanan Publik</h3>
+                        <p class="text-gray-600 mb-4">Transformasi digital layanan pemerintah untuk kemudahan masyarakat.</p>
+                        <a href="#" class="text-blue-700 font-medium flex items-center">
+                            Baca selengkapnya <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-12" data-aos="fade-up">
+                <button class="bg-blue-900 text-white px-6 py-3 rounded-lg font-medium hover:bg-blue-800 transition">
+                    Lihat Semua Berita
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-blue-900 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">Dalam Angka</h2>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div data-aos="fade-up" data-aos-delay="100">
+                    <div class="text-4xl font-bold mb-2">12.5jt</div>
+                    <div class="text-gray-300">Layanan Online</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="200">
+                    <div class="text-4xl font-bold mb-2">98%</div>
+                    <div class="text-gray-300">Kepuasan Masyarakat</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="300">
+                    <div class="text-4xl font-bold mb-2">34</div>
+                    <div class="text-gray-300">Jenis Layanan</div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="400">
+                    <div class="text-4xl font-bold mb-2">24/7</div>
+                    <div class="text-gray-300">Layanan Online</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Portal Pemerintah</h3>
+                    <p class="text-gray-400">Layanan resmi pemerintah untuk kemudahan akses informasi dan layanan publik.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Beranda</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Layanan Publik</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Informasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Kontak Kami</h4>
+                    <ul class="space-y-2">
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="map-pin" class="mr-2 w-4 h-4"></i> Jl. Merdeka No.1, Jakarta
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="phone" class="mr-2 w-4 h-4"></i> (021) 12345678
+                        </li>
+                        <li class="flex items-center text-gray-400">
+                            <i data-feather="mail" class="mr-2 w-4 h-4"></i> info@pemerintah.go.id
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Media Sosial</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-blue-600">
+                            <i data-feather="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-blue-400">
+                            <i data-feather="twitter" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-red-600">
+                            <i data-feather="youtube" class="w-5 h-5"></i>
+                        </a>
+                        <a href="#" class="bg-gray-800 p-2 rounded-full hover:bg-pink-600">
+                            <i data-feather="instagram" class="w-5 h-5"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-6 text-center text-gray-400">
+                <p>© 2023 Portal Pemerintah Indonesia. Seluruh hak cipta dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
